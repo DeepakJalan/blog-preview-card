@@ -1,0 +1,139 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow-color: hsl(47, 88%, 63%);
+  --white-color: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --font-family: "Figtree", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--yellow-color);
+  font-size: 16px;
+  color: var(--gray-950);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--white-color);
+  border-radius: 12px;
+  max-width: 13.575em;
+  height: auto;
+  border: 1px solid var(--gray-950);
+  box-shadow: 6px 6px 0 var(--gray-950);
+}
+
+.card {
+  padding: 15px;
+}
+
+.card-image {
+  width: 185px;
+  height: 133px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  font-size: 0.5rem;
+  margin-block-start: 2em;
+}
+
+.tag {
+  font-weight: 800;
+  background-color: var(--yellow-color);
+  display: block;
+  padding: 0.5em 1em;
+  width: fit-content;
+  border-radius: 2px;
+}
+
+.date {
+  display: block;
+  margin-block-start: 1.1em;
+}
+
+.title {
+  font-size: 1.65em;
+  font-weight: 800;
+  margin-block-start: 0.9em;
+}
+
+.title a {
+  text-decoration: none;
+  color: var(--gray-950);
+}
+
+a:link {
+  color: var(--gray-950);
+}
+
+a:active {
+  color: var(--gray-950);
+}
+
+a:hover {
+  color: var(--gray-950);
+}
+
+.excerpt {
+  margin-block-start: 1.2em;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+
+.author {
+  margin-block: 1.5em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  font-size: 0.6rem;
+  font-weight: 800;
+}
+
+.author img {
+  width: 22px;
+  height: 22px;
+}
+
+@media (min-width: 675px) {
+  .container {
+    max-width: 16em;
+  }
+
+  .card-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  .card-body {
+    font-size: 0.581rem;
+    margin-block-start: 1.6em;
+  }
+
+  .title {
+    font-size: 1.75em;
+    font-weight: 800;
+    margin-block-start: 0.6em;
+  }
+}
