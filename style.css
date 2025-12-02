@@ -74,7 +74,7 @@ body {
 
 .title {
   font-size: 1.5em;
-  margin-block-start: 0.666em;
+  margin-block-start: 0.8em;
 }
 
 .title a {
@@ -102,8 +102,10 @@ a:hover {
 .author {
   font-size: 0.875em;
   font-weight: 800;
-  margin-block: 1.5rem 0; 
-  gap: 0.875em;
+  margin-block-start: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
 }
 
 .author img {
